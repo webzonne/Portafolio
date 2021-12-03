@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+<title>Portafolio Web</title>
+    <style>
+        
+        /*CSS DE TODA LA PAGINA xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        body{
+            background-image: url(img/fondo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        }
+        
+        /* CSS DEL NAV MOBIL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        .nav-mobil{
+            display: block;
+            width: 85%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        
+        .logo-movil{
+          position: relative;
+        }
+        
+        .content-ul{
+          display: flex;
+          justify-content: flex-end;
+        }
+        
+        .despliegue{
+           opacity: 0; 
+        }
+        
+        .nav-mobil ul{
+            background: gray;
+            transition: all .5s;
+            width: 140px;
+        }
+        
+        .nav-mobil ul li{
+            list-style: none;
+            border-bottom: 1px solid white;
+            padding: 10px;
+            transition: all .2s;
+        }
+        
+        .nav-mobil ul li:hover{
+            background: black;
+        }
+        
+        
+        .nav-mobil ul li a{
+            text-decoration: none;
+            color: black;
+            font-family: Poppins, sans-serif;
+            transition: all .2s;
+        }
+        
+        .nav-mobil ul li a:hover{
+            color:white;
+            
+        }
+        
+        .nav-desktop{
+            display: none;
+        }
+        
+        .header-desktop{
+            display: none;
+        }
+        
+        .header-mobil{
+            display: block;
+        }
+        
+        .portafolio-desktop{
+            display: none;
+        }
+        
+        
+        .nav-movil-content{
+            display: flex;
+            justify-content: space-between
+        }
+        
+        .nav-movil-content input{
+            display: none;
+        }
+        
+        .nav-movil-content label img{
+            cursor: pointer;
+        }
+        
+         /* CSS My portafolio mobil xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        .content-portafolio-movil{
+            text-align: center;
+        }
+        
+        .portafolio p{
+            display: none;
+        }
+        
+        .content-portafolio-movil span{
+            color: #CACACA;
+        }
+        
+        
+        .content-portafolio-movil p{
+            font-size: 30px;
+            font-family: Poppins;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+        
+        /*ABOUT ME MOBIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        .about-me-movil p{
+            color: black;
+            font-family: Poppins, sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 100px;
+            text-align: center;
+            margin-bottom: ;
+        }
+        
+        .about-me-movil img{
+            width: 40px;
+        }
+        
+        .about-me{
+            display: none;
+        }
+        
+        .about-me-movil span{
+            color: #CACACA;
+        }
+        
+        .about-lorem-mobil{
+            font-size: 20px !important;
+            margin-bottom: 100px;
+            margin-top: 60px !important;
+        }
+        
+        .caja-text{
+            position: relative;
+            margin-bottom: 126px;
+        }
+        
+        .content-comilla{
+            position: absolute;
+            left:40px;
+            top: -60px;
+        }
+        
+        
+        /*CONTACTO MOBIL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        
+        .contact-me{
+            display: none;
+        }
+        
+        .contact-me-movil p{
+            text-align: center;
+            font-size:30px;
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+            margin-bottom: 116px; 
+        }
+       
+        .content-contact-movil{
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+        
+        .content-contact-movil img{
+            margin-bottom: 60px;
+        }
+        
+       
+        
+        .contact-me-movil span{
+            color: #cacaca;
+        }
+        
+         .footer{
+            background-image: url(img/Vector.png);
+            height: 230px;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+         .footer p{
+            color: white;
+            font-size: 25px;
+            font-family: Poppins, sans-serif;
+            text-align: center;
+            position: absolute;
+            top: 82%;
+            left: 25%;
+            
+        }
+        
+        
+        /* CSS DEL NAV DESTOP xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        @media (min-width:750px){
+            
+         .nav-desktop{
+            display:block;
+        }
+            
+        .nav-mobil{   
+            display:none;    
+        }
+        .header-desktop{
+           display: block;     
+        }
+            
+         
+        img.arriba1{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+        img.arriba6{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba7{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba8{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba9{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba11{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba11:hover{
+            transform:scale(1.08);
+        }
+            
+         img.arriba12{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba12:hover{
+            transform:scale(1.08);
+        }
+            
+         img.arriba13{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba13:hover{
+            transform:scale(1.08);
+        }
+            
+            
+        img.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        p.arriba10{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        p.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        div.arriba5{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        div.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        li.arriba2{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        li.arriba3{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        li.arriba4{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        li.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+                
+       
+            
+        .header-mobil{
+            display: none;        
+        }
+            
+        .portafolio-desktop{
+            display: block;        
+        }
+            
+        .content-portafolio-movil{
+            display: none;        
+        }
+     
+        .nav-desktop-content{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav .logo{
+            margin-top: 64px;
+        }
+        
+         nav ul{
+            display: flex;
+        }
+        
+        nav ul li{
+            list-style: none;
+            margin-right: 80px;
+            margin-top: 64px;
+        }
+        
+        nav ul li a{
+            text-decoration: none;
+            color:black;
+            font-size: 25px;
+            font-family:'Poppins' ,sans-serif;
+            transition: all .5s;
+        }
+            
+        nav ul li a:hover{
+            font-size: 28px;
+        }
+            
+        nav ul li a.contact{
+            background: black;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+        }
+            
+         nav ul li a.contact:hover{
+            background:gray;
+            color: black;
+            padding: 10px 18px;
+            border-radius: 10px;
+        }
+        
+         /* CSS My portafolio desktop xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        .portafolio p{
+            color: #141515;
+            font-family: Poppins;
+            font-size: 35px;
+            text-align: center;
+            margin-top: 111px;
+            margin-bottom: 60px;
+            display: block;
+        }
+        
+        .portafolio span{
+            color: #CACACA;
+        }
+        
+        .content-portafolio{
+            display: flex;
+            justify-content: center;
+            
+        }
+            
+        .about-me{
+            display:block;
+        }
+            
+            
+         /* CSS MY ABOUT ME XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        
+        .about-me{
+            text-align: center;
+        }
+            
+        .about-me-movil{
+            display: none;
+        }
+        
+        .about-me span{
+            color: #CACACA;
+        }
+        
+        .about-me p{
+            color: black;
+            font-family: Poppins, sans-serif;
+            font-size: 35px;
+            font-weight: 600;
+            margin-top: 111px;
+        }
+        
+        .caja-text{
+            width: 65%;
+            margin: auto;
+            position: relative;
+            margin-bottom: 126px;
+        }
+        
+        .content-comilla{
+            position: absolute;
+            left: -70px;
+            top: -90px;
+        }
+        
+        
+        .caja-text p{
+            color:black;
+            font-weight:400;
+            font-size: 23px;
+            margin-bottom: 226px;
+        }
+            
+           
+        /* CONTACT ME XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        
+        .contact-me{
+            display: block;        
+        }    
+        
+         .contact-me p{
+            text-align: center;
+            font-size:35px;
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+            margin-bottom: 156px; 
+        }
+       
+        .content-contact{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .contact-me span{
+            color: #cacaca;
+        }
+            
+        .contact-me-movil{
+            display: none;
+        }
+            
+            
+        /* FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        
+        
+        .footer{
+            background-image: url(img/Vector.png);
+            height: 330px;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .footer p{
+            color: white;
+            font-size: 35px;
+            font-family: Poppins, sans-serif;
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            left: 37%;
+            
+        }
+        
+        
+        } /*termina 750px*/
+        
+        /* CSS DEL HEADER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        header .header-desktop-content{
+            display: flex;
+            width: 75%;
+            margin: auto;
+            margin-top: 185px;
+           
+        }
+        
+        header .header-desktop-content .text{
+            width:70%;   
+        }
+        
+        header .header-desktop-content .imagen{
+            width: 30%;
+            
+        }
+        
+        header .header-desktop-content .text p:nth-child(1){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 35px;
+        }
+        
+         header .header-desktop-content .text p:nth-child(2){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 50px;
+        }
+        
+        
+         header .header-desktop-content .text p:nth-child(3){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 50px;
+        }
+        
+         header .header-desktop-content .text p:nth-child(4){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 23px;
+           margin-top: 32px;
+        }
+        
+        /* CSS DEL HEADER MOBIL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .header-text{
+           
+            width: 80%;
+            margin: auto;
+        }
+        
+        .header-text p:nth-child(1){
+           font-size: 25px;
+           font-weight: 400;
+           font-family: Poppins;
+           margin-top: 21px;
+        }
+        
+        .header-text p:nth-child(2){
+            font-size: 30px;
+            font-weight: 600;
+            font-family: Poppins;
+        }
+        
+        .header-text p:nth-child(3){
+            font-size: 30px;
+            font-weight: 600;
+            font-family: Poppins;
+        }
+        
+        .header-text p:nth-child(4){
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Poppins;
+        }
+        
+        .header-mobil-content{
+            margin-top:40px; 
+        }
+        
+        .content-image{
+            text-align: center;
+        }
+        
+    </style>
+    
+
+</head>
+<body>
+    
+     <nav>
+      <!-- MENU MOVIL ----------------------------------------------------------------------------------------------------------------------->
+    <div class="nav-mobil">
+        <div class="nav-movil-content">
+     
+        
+                <div class="logo-movil">
+                    <img src="img/logo.png" width="60px" height="45px">
+                </div>
+                 <input class="box" type="checkbox" id="check">
+                        <label for="check">
+                            <img class="barra" src="img/menu-icon.png">
+                        </label>
+            
+                      
+    
+               
+        </div>
+        
+            <div class="content-ul">
+           
+                <ul class="despliegue">
+                                <li id="primerli"><a class="ab" href="#">About me</a></li>
+                                <li id="segundoli"><a class="port" href="#">Portfolio</a></li>
+                                <li id="tercerli"><a class="con" href="#">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+    
+    <!-- MENU DESKTOP ----------------------------------------------------------------------------------------------------------------------->
+    <div class="nav-desktop">
+        
+        
+            <div class="nav-desktop-content">
+     
+ 
+                <div class="logo">
+                    <img class="arriba1"  src="img/logo.png" width="102px" height="84px" id="imagen2">
+                </div>
+               
+             
+                <ul>
+                        <li class="arriba2" id="imagen11"><a href="#">About me</a></li>
+                        <li class="arriba3" id="imagen12"><a href="#">Portfolio</a></li>
+                        <li class="arriba4" id="imagen13"><a href="#" class="contact">Contact</a></li>
+                </ul>
+                    
+               
+            
+            </div>
+        
+    </div>  
+    </nav>
+         
+    
+   
+    
+    
+    <!-- HEADER DESKTOP ------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <div class="header-desktop">
+     
+                <div class="header-desktop-content">
+                    <!-- TEXTO -->
+                        <div class="text arriba5" id="imagen10">
+                            <p>Hi !</p>
+                            <p> I'm Héctor Silva</p>
+                            <p> a Front-end Developer</p>
+                            <p>Front-End I am from Venezuela. I’am coding with a clean and beautiful problem solving in mind.</p>
+                        </div>
+                    <!--IMAGEN-->
+                        <div class="imagen">
+                            <img class="arriba6" src="img/heroImg%201.png" id="imagen1">
+                        </div>
+                </div>
+        </div>
+        
+        
+    <!-- HEADER MOBIL -------------------------------------------------------------------------------------------------------------------> 
+        
+        <div class="header-mobil">
+            <div class="header-mobil-content">
+                <div class="content-image">
+                    <img src="img/heromobil.png">
+                </div>
+                <div class="header-text">
+                    <p>Hi !</p>
+                    <p>I’m Héctor Silva</p>
+                    <p>a Front-End Developer</p>
+                    <p>Front-End devel oper based in Bekasi, Indonesian
+                    I’am coding with a clean and beautiful problem
+                    solving in mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MI PORTAFOLIO DESKTOP --------------------------------------------------------------------------------------------------------->
+    <div class="portafolio">
+        
+        <p><span>My</span> Portfolio</p>
+        
+            <div class="portafolio-desktop">
+                <div class="content-portafolio">
+            
+                    <div class="content-a">
+                        <img class="arriba7" src="img/a.png" id="imagen3">
+                    </div>
+                    <div class="content-b">
+                        <img class="arriba8" src="img/b.png" id="imagen4">
+                    </div>
+            
+                </div>
+            </div>
+    </div>
+ 
+    <!-- MI PORTAFOLIO MOBIL --------------------------------------------------------------------------------------------------------->
+        
+        <div class="content-portafolio-movil">
+            
+            <p><span>My</span> Portfolio</p>
+            
+             <div class="content-a">
+                <img src="img/a.png">
+            </div>
+            <div class="content-b">
+                <img src="img/b.png">
+            </div>
+            <div class="content-c">
+                <img src="img/c.png">
+            </div>
+            
+        </div>
+       
+    
+    <!-- ABOUT ME DESKTOP -------------------------------------------------------------------------------------------------------------------------->
+    <div class="about-me">
+        <p><span>About</span> Me</p>
+        <div class="caja-text">
+            <div class="content-comilla">
+                 <img class="arriba9" src="img/comilla.png" id="imagen9">
+            </div>
+           
+            <p class="arriba10" id="imagen5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus tincidunt magna ac hendrerit laoreet. Curabitur 
+                bibendum metus velit, ut placerat leo accumsan at. Duis 
+                condimentum semper purus quis 
+            </p>
+        </div>
+    </div>
+    
+     <!-- ABOUT ME MOBIL -------------------------------------------------------------------------------------------------------------------------->
+    <div class="about-me-movil">
+        <p><span>About</span> Me</p>
+        <div class="caja-text">
+            <div class="content-comilla">
+                 <img  src="img/comilla.png" >
+            </div>
+           
+            <p class="about-lorem-mobil">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus tincidunt magna ac hendrerit laoreet. Curabitur 
+                bibendum metus velit, ut placerat leo accumsan at. Duis 
+                condimentum semper purus quis 
+            </p>
+        </div>
+    </div>
+    <!-- Contact Me ---------------------------------------------------------------------------------------------------------------------------->
+    <div class="contact-me">
+        <p><span>Contact</span> Me</p>
+        <div class="content-contact"> 
+                <a href="#"><img class="arriba11" src="img/Instagram.png" width="215px" height="209" id="imagen6"></a>
+                <a href="#"><img class="arriba12" src="img/Email.png" width="215px" height="209" id="imagen7"></a>
+                <a href="#"><img class="arriba13" src="img/telpon.png" width="215px" height="209" id="imagen8"> </a>
+        </div>
+    </div>
+    
+    <!-- Contact Me MOBIL ---------------------------------------------------------------------------------------------------------------------------->
+    <div class="contact-me-movil">
+        <p><span>Contact</span> Me</p>
+        <div class="content-contact-movil"> 
+                <a href="#"><img src="img/Instagram.png" width="215px" height="209"></a>
+                <a href="#"><img src="img/Email.png" width="215px" height="209"></a>
+                <a href="#"><img src="img/telpon.png" width="215px" height="209"> </a>
+        </div>
+    </div>
+    <!--FOOTER ---------------------------------------------------------------------------------------------------------------------------------->
+    <div class="footer">
+        <p>Design By Webzone</p>
+    </div>
+<script>
+
+          $(document).ready(function(){
+        $(".barra").click(function(){
+            
+             if ($(".box").is(":checked")){
+               $(".despliegue").css("opacity", "0"); 
+                 
+            }else{
+                $(".despliegue").css("opacity", "1"); 
+                
+            }
+            
+        });
+       
+      /* PRIMER LI */
+      $("#primerli").mouseover(function(){
+         $(".ab").css("color", "white"); 
+      });
+      $("#primerli").mouseout(function(){
+         $(".ab").css("color", "black"); 
+      });
+              
+       /* SEGUNDO LI */
+      $("#segundoli").mouseover(function(){
+         $(".port").css("color", "white"); 
+      });
+      $("#segundoli").mouseout(function(){
+         $(".port").css("color", "black"); 
+      });
+              
+     /* TERCER LI */
+      $("#tercerli").mouseover(function(){
+         $(".con").css("color", "white"); 
+      });
+      $("#tercerli").mouseout(function(){
+         $(".con").css("color", "black"); 
+      });
+              
+    
+       
+    });
+    
+</script>
+    
+<script src="main.js"></script>
+    
+    
+    
+   
+</body>
+</html>
