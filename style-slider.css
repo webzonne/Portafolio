@@ -185,6 +185,10 @@ input{
     margin: auto!important;
 }
 
+.owl-theme .owl-dots, .owl-theme .owl-nav{
+    margin-top: 20px !important;
+}
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span{
     background: #FCB659!important;
