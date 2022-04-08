@@ -1,4 +1,4 @@
- /*CSS DE TODA LA PAGINA xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*CSS DE TDA LA PAGINA xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         *{
             padding: 0;
             margin: 0;
@@ -42,7 +42,7 @@
             transition: all .5s;
             width: 140px;
         }
-        
+       
         .nav-mobil ul li{
             list-style: none;
             border-bottom: 1px solid white;
@@ -635,13 +635,5 @@
             font-size: 16px;
             font-weight: 600;
             font-family: Poppins;
-        }
-        
-        .header-mobil-content{
-            margin-top:40px; 
-        }
-        
-        .content-image{
-            text-align: center;
-        }
+    
         
