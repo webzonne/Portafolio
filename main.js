@@ -19,7 +19,7 @@ const cargarImagen = (entrada, observador) => {
        
         if(entrada.isIntersecting){
            entrada.target.classList.add('visible');
-            console.log("entra");
+       
         }
         
     });
