@@ -5,6 +5,11 @@
     font-family: Poppins, sans-serif;
 }
 
+.owl-carousel{
+    width: 80% !important;
+    margin: auto !important;
+}
+
 /* CAJA O SLIDER */
 
 input{
