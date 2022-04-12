@@ -1,0 +1,698 @@
+ /*CSS DE TODA LA PAGINA xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        body{
+            background-image: url(img/fondo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        }
+        
+        /* CSS DEL NAV MOBIL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        .nav-mobil{
+            display: block;
+            width:80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        
+        .logo-movil{
+          position: relative;
+        }
+        
+        .content-ul{
+          display: flex;
+          justify-content: flex-end;
+        }
+        
+        .despliegue{
+           opacity: 0; 
+        }
+        
+        .nav-mobil ul{
+            background: gray;
+            transition: all .5s;
+            width: 140px;
+        }
+        
+        .nav-mobil ul li{
+            list-style: none;
+            border-bottom: 1px solid white;
+            padding: 10px;
+            transition: all .2s;
+            
+        }
+        
+        .nav-mobil ul li:hover{
+            background: black;
+        }
+        
+        
+        .nav-mobil ul li a{
+            text-decoration: none;
+            color: black;
+            font-family: Poppins, sans-serif;
+            transition: all .2s;
+        }
+        
+        .nav-mobil ul li a:hover{
+            color:white;
+            
+        }
+        
+        .nav-desktop{
+            display: none;
+        }
+        
+        .header-desktop{
+            display: none;
+        }
+        
+        .header-mobil{
+            display: block;
+        }
+        
+        .portafolio-desktop{
+            display: none;
+        }
+        
+        
+        .nav-movil-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .nav-movil-content input{
+            display: none;
+        }
+        
+        .nav-movil-content label img{
+            cursor: pointer;
+        }
+
+        @media (min-width:400px){
+            .nav-mobil{
+                width: 90%;
+            }
+        }
+        
+         /* CSS My portafolio mobil xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        .content-portafolio-movil{
+            text-align: center;
+        }
+        
+        .portafolio p{
+            display: none;
+        }
+        
+        .content-portafolio-movil span{
+            color: #FCB659;
+        }
+        
+        
+        .content-portafolio-movil p{
+            font-size: 30px;
+            font-family: Poppins;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+
+        /* ABOUT ME NEW */
+
+        .about-me{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 145px;
+        }
+            
+        .about-me .rectangulo{
+            text-align: left;
+            margin-bottom: 20px;
+            
+        }
+        
+        .about-me span{
+            color: #FCB659;
+        }
+        
+        .about-me p{
+            color: black;
+            font-family: Poppins, sans-serif;
+            font-size: 33px;
+        }
+            
+        #sobre-mi-desk{
+            font-weight: 600;
+            margin-top:150px;
+            margin-bottom: 45px;
+        }
+            
+        .content-about{
+        position: relative;
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(0.61deg, #FFFFFF 0.21%, #FCB659 99.17%);
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px;
+            }
+
+        .content-about p{
+        font-size: 16px;
+        font-family:'Poppins', sans-serif;
+        text-align: justify;
+        line-height: 1.5;
+        }
+
+        @media (min-width:600px){
+            
+        .about-me{
+        width: 75%;
+        margin: auto;
+        margin-bottom: 145px;
+        
+        }
+            
+        .content-about p{
+        font-size: 18px;
+    
+        }
+        }
+
+
+        /* CONTACTO NEW */
+
+        .seccion-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        }
+
+        .contacto-all h2{
+            text-align: center;
+            font-size: 33px;
+            margin-bottom: 80px;
+            
+        }
+
+        .items-contacto{
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+            font-size: 20px;
+            font-weight: 600;
+            width:327px;
+            margin: 0 40px;
+            margin-bottom: 40px;
+            height: 301px;
+            position: relative;
+            text-align: center;
+        }
+
+        .items-contacto:hover{
+            background: linear-gradient(0.61deg, #FFFFFF 0.21%, #FCB659 99.17%);
+        }
+
+
+        .items-contacto .content-img{
+            position: absolute;
+            right: 0;
+            left: 0;
+            text-align: center;
+            top: 10%;
+            color: black;
+        }
+
+        .no-show-1 p,
+        .no-show-2 p,
+        .no-show-3 p{
+            position: absolute;
+            right: 0;
+            left: 0;
+            text-align: center;
+            top: 60%;
+            color: black;  
+        }
+
+        .active-insta,
+        .active-tele{
+            display: none;
+            transform: scale(1.3);
+            position: absolute;
+            right: 0;
+            left: 0;
+            text-align: center;
+            top: 40%;
+            color:black;
+        }
+
+        .active-email{
+            display: none;
+            position: absolute;
+            transform: scale(0.88);
+            right: 0;
+            left: 0;
+            text-align: center;
+            top: 40%;
+            color:black; 
+        }
+
+         /* FOOOTERR */
+        
+         .footer{
+           
+            background-image: url(img/Vector.png);
+            position: relative;
+            height: 330px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+         .footer p{
+            color: white;
+            font-size: 25px;
+            font-family: Poppins, sans-serif;
+            position: absolute;
+            text-align: center;
+            top: 82%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        
+        /* CSS DEL NAV DESTOP xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+        
+        @media (min-width:750px){
+            
+         .nav-desktop{
+            display:block;
+            max-width: 1880px;
+            margin: auto;
+        }
+            
+        .nav-mobil{   
+            display:none;    
+        }
+        .header-desktop{
+           display: block;
+           max-width: 1880px;
+           margin: auto;
+        }
+            
+         
+        img.arriba1{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+        img.arriba6{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba7{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba8{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+         img.arriba9{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;    
+        }
+            
+        .arriba11{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .3s ease-in-out all;    
+        }
+            
+            
+        .arriba12{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .3s ease-in-out all;    
+        }
+              
+        .arriba13{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .3s ease-in-out all;    
+        }
+            
+        img.visible{
+            opacity: 1;
+            transform: translateY(0); 
+        }
+            
+                 
+        #imagen6.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        #imagen7.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        #imagen8.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        .arriba10{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        p.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        div.arriba5{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        div.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        li.arriba2{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        li.arriba3{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        li.arriba4{
+            opacity: 0;
+            transform:translateY(-50px);
+            transition: .7s ease-in-out all;     
+        }
+            
+        li.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+                
+       
+            
+        .header-mobil{
+            display: none;        
+        }
+            
+        .portafolio-desktop{
+            display: block;        
+        }
+            
+        .content-portafolio-movil{
+            display: none;        
+        }
+     
+        .nav-desktop-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 75%;
+            margin: auto;
+            margin-top: 64px;
+            
+        }
+        
+         nav ul{
+            display: flex;
+        }
+        
+        nav ul li:nth-child(1){
+            list-style: none;
+            margin-right: 80px;
+        }
+        nav ul li:nth-child(2){
+            list-style: none;
+            margin-right: 80px;
+        }
+            
+        nav ul li:nth-child(3){
+            list-style: none;
+        }
+        
+        nav ul li a{
+            text-decoration: none;
+            color:black;
+            font-size:19px;
+            font-family:'Poppins' ,sans-serif;
+            transition: all .5s;
+        }
+            
+        nav ul li a:hover{
+            transform: scale(1.2);
+        }
+            
+        nav ul li a.contact{
+            background: black;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+        }
+            
+         nav ul li a.contact:hover{
+            background:#FCB659;
+            color: black;
+            padding: 10px 18px;
+            border-radius: 10px;
+        }
+        
+         /* CSS My portafolio desktop xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        .portafolio p{
+            color: #141515;
+            font-family: Poppins;
+            font-size: 33px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 164px;
+            margin-bottom: 112px;
+        }
+        
+        .portafolio span{
+            color: #FCB659;
+        }
+        
+        .content-portafolio{
+            display: flex;
+            justify-content: center;
+            
+        }
+            
+            
+            
+         /* CSS MY ABOUT ME XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        
+        
+            
+           
+        /* CONTACT ME XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        
+        .contact-me{
+            display: block;        
+        }    
+        
+         .contact-me p{
+            text-align: center;
+            font-size:33px;
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+            margin-bottom: 156px; 
+        }
+       
+        .content-contact{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .contact-me span{
+            color: #FCB659;
+        }
+            
+        .contact-me-movil{
+            display: none;
+        }
+            
+            
+        /* FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+        
+        
+        .footer{
+            background-image: url(img/Vector.png);
+            height: 330px;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 1920px;
+            margin: auto;
+           
+        }
+        
+        .footer p{
+            color:white;
+            font-size: 33px;
+            font-family: Poppins, sans-serif;
+            text-align: center;
+            position: absolute;
+            top:266px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+           
+            
+        }
+        
+        
+        } /*termina 750px*/
+
+
+
+        
+        /* CSS DEL HEADER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+        header .header-desktop-content{
+            display: flex;
+            width:75%;
+            margin: auto;
+            margin-top: 185px;
+            
+            
+           
+        }
+        
+        header .header-desktop-content .text{
+            width:56%;
+           
+            
+        }
+        
+        header .header-desktop-content .imagen{
+            width:46%;
+            text-align:right;
+            
+            
+        }
+        
+        header .header-desktop-content .text p:nth-child(1){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 25px;
+        }
+        
+         header .header-desktop-content .text p:nth-child(2){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 35px;
+        }
+        
+        
+         header .header-desktop-content .text p:nth-child(3){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 35px;
+        }
+        
+         header .header-desktop-content .text p:nth-child(4){
+           color: #141517;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 400;
+           font-size: 20px;
+           margin-top: 32px;
+           text-align: justify;
+           max-width:515px;    
+        }
+        
+        /* CSS DEL HEADER MOBIL xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .header-text{
+           
+            width: 80%;
+            margin: auto;
+        }
+        
+        .header-text p:nth-child(1){
+           font-size: 25px;
+           font-weight: 400;
+           font-family: Poppins;
+           margin-top: 21px;
+        }
+        
+        .header-text p:nth-child(2){
+            font-size: 27px;
+            font-weight: 400;
+            font-family: Poppins;
+        }
+        
+        .header-text p:nth-child(3){
+            font-size: 20px;
+            font-weight: 400;
+            font-family: Poppins;
+            
+        }
+        
+        .header-text p:nth-child(4){
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Poppins;
+            text-align: justify;
+            
+        }
+        
+        .header-mobil-content{
+            margin-top:40px; 
+        }
+        
+        .content-image{
+            text-align: center;
+        }
+
+        .content-image img{
+            width: 100%;        
+        }
+        
+        
