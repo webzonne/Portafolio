@@ -12,10 +12,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");
+$(".slide:nth-child(6) button").css("opacity","0.2");
 });
 
 $("#radio2").click(function(){
@@ -31,10 +34,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");
+$(".slide:nth-child(6) button").css("opacity","0.2");
 });
 
 $("#radio3").click(function(){
@@ -50,10 +56,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");
+$(".slide:nth-child(6) button").css("opacity","0.2");
 });
 
 
@@ -70,10 +79,13 @@ $(".slide-img3").css("opacity","0.2");
 $(".slide-img3").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");
+$(".slide:nth-child(6) button").css("opacity","0.2");
 });
 
 $("#radio5").click(function(){
@@ -89,24 +101,52 @@ $(".slide-img3").css("opacity","0.2");
 $(".slide-img3").css("transform", "scale(0.8)");
 $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
+$(".slide:nth-child(6) button").css("opacity","0.2");
+});
+
+$("#radio6").click(function(){
+    i=6;
+$(".slide-img6").css("opacity","1");
+$(".slide-img6").css("transform", "scale(1)");
+$(".slide:nth-child(6) button").css("opacity","1");
+$(".slide-img2").css("opacity","0.2");
+$(".slide-img2").css("transform", "scale(0.8)");
+$(".slide-img1").css("opacity","0.2");
+$(".slide-img1").css("transform", "scale(0.8)");
+$(".slide-img3").css("opacity","0.2");
+$(".slide-img3").css("transform", "scale(0.8)");
+$(".slide-img4").css("opacity","0.2");
+$(".slide-img4").css("transform", "scale(0.8)");
+$(".slide-img5").css("opacity","0.2");
+$(".slide-img5").css("transform", "scale(0.8)");
+$(".slide:nth-child(1) button").css("opacity","0.2");
+$(".slide:nth-child(2) button").css("opacity","0.2");
+$(".slide:nth-child(3) button").css("opacity","0.2");
+$(".slide:nth-child(4) button").css("opacity","0.2");
+$(".slide:nth-child(5) button").css("opacity","0.2");
 });
 
 
 
 /* BOTON IZQUIERDA */
 $(".content-izq").click(function(){
-    if (i==1){i=6}
+    if (i==1){i=7}
         i--;
  $("#radio"+i).prop("checked", true);
 
-if(i==5){
-$(".slide-img5").css("opacity","1");
-$(".slide-img5").css("transform", "scale(1)");
-$(".slide:nth-child(5) button").css("opacity","1");
+
+ if(i==6){
+$(".slide-img6").css("opacity","1");
+$(".slide-img6").css("transform", "scale(1)");
+$(".slide:nth-child(6) button").css("opacity","1");
+$(".slide-img5").css("opacity","0.2");
+$(".slide-img5").css("transform", "scale(0.8)");
 $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img2").css("opacity","0.2");
@@ -119,6 +159,28 @@ $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");  
+$(".slide:nth-child(5) button").css("opacity","0.2");  
+}
+
+if(i==5){
+$(".slide-img5").css("opacity","1");
+$(".slide-img5").css("transform", "scale(1)");
+$(".slide:nth-child(5) button").css("opacity","1");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
+$(".slide-img4").css("opacity","0.2");
+$(".slide-img4").css("transform", "scale(0.8)");
+$(".slide-img2").css("opacity","0.2");
+$(".slide-img2").css("transform", "scale(0.8)");
+$(".slide-img1").css("opacity","0.2");
+$(".slide-img1").css("transform", "scale(0.8)");
+$(".slide-img3").css("opacity","0.2");
+$(".slide-img3").css("transform", "scale(0.8)");
+$(".slide:nth-child(1) button").css("opacity","0.2");
+$(".slide:nth-child(2) button").css("opacity","0.2");
+$(".slide:nth-child(3) button").css("opacity","0.2");
+$(".slide:nth-child(4) button").css("opacity","0.2");  
+$(".slide:nth-child(6) button").css("opacity","0.2");  
 }
  
 if(i==4){
@@ -133,10 +195,13 @@ $(".slide-img3").css("opacity","0.2");
 $(".slide-img3").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");  
+$(".slide:nth-child(6) button").css("opacity","0.2");  
 }
 
 if(i==3){
@@ -151,10 +216,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");   
+$(".slide:nth-child(6) button").css("opacity","0.2");   
  }
 if(i==2){
 $(".slide-img2").css("opacity","1");
@@ -168,10 +236,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");    
+$(".slide:nth-child(6) button").css("opacity","0.2");    
 }
 if(i==1){
 $(".slide-img1").css("opacity","1");
@@ -185,10 +256,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");    
+$(".slide:nth-child(6) button").css("opacity","0.2");    
 }
 });
 
@@ -196,7 +270,7 @@ $(".slide:nth-child(5) button").css("opacity","0.2");
 
 $(".content-dere").click(function(){
 i++;
-if(i>5){i=1}
+if(i>6){i=1}
 $("#radio"+i).prop("checked", true);
 if(i==1){
 $(".slide-img1").css("opacity","1");
@@ -210,10 +284,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
-$(".slide:nth-child(5) button").css("opacity","0.2");    
+$(".slide:nth-child(5) button").css("opacity","0.2");
+$(".slide:nth-child(6) button").css("opacity","0.2");    
 }
 if(i==2){
 $(".slide-img2").css("opacity","1");
@@ -227,10 +304,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");         
+$(".slide:nth-child(6) button").css("opacity","0.2");         
 }
 if(i==3){
 $(".slide-img3").css("opacity","1");
@@ -244,10 +324,13 @@ $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");
-$(".slide:nth-child(5) button").css("opacity","0.2");      
+$(".slide:nth-child(5) button").css("opacity","0.2");
+$(".slide:nth-child(6) button").css("opacity","0.2");       
 }
 if(i==4){
 $(".slide-img4").css("opacity","1");
@@ -261,15 +344,20 @@ $(".slide-img3").css("opacity","0.2");
 $(".slide-img3").css("transform", "scale(0.8)");
 $(".slide-img5").css("opacity","0.2");
 $(".slide-img5").css("transform", "scale(0.8)");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(5) button").css("opacity","0.2");  
+$(".slide:nth-child(6) button").css("opacity","0.2");  
 }
 if(i==5){
 $(".slide-img5").css("opacity","1");
 $(".slide-img5").css("transform", "scale(1)");
 $(".slide:nth-child(5) button").css("opacity","1");
+$(".slide-img6").css("opacity","0.2");
+$(".slide-img6").css("transform", "scale(0.8)");
 $(".slide-img4").css("opacity","0.2");
 $(".slide-img4").css("transform", "scale(0.8)");
 $(".slide-img2").css("opacity","0.2");
@@ -282,5 +370,26 @@ $(".slide:nth-child(1) button").css("opacity","0.2");
 $(".slide:nth-child(2) button").css("opacity","0.2");
 $(".slide:nth-child(3) button").css("opacity","0.2");
 $(".slide:nth-child(4) button").css("opacity","0.2");  
+$(".slide:nth-child(6) button").css("opacity","0.2");  
 }
+if(i==6){
+    $(".slide-img6").css("opacity","1");
+    $(".slide-img6").css("transform", "scale(1)");
+    $(".slide:nth-child(6) button").css("opacity","1");
+    $(".slide-img5").css("opacity","0.2");
+    $(".slide-img5").css("transform", "scale(0.8)");
+    $(".slide-img4").css("opacity","0.2");
+    $(".slide-img4").css("transform", "scale(0.8)");
+    $(".slide-img2").css("opacity","0.2");
+    $(".slide-img2").css("transform", "scale(0.8)");
+    $(".slide-img1").css("opacity","0.2");
+    $(".slide-img1").css("transform", "scale(0.8)");
+    $(".slide-img3").css("opacity","0.2");
+    $(".slide-img3").css("transform", "scale(0.8)");
+    $(".slide:nth-child(1) button").css("opacity","0.2");
+    $(".slide:nth-child(2) button").css("opacity","0.2");
+    $(".slide:nth-child(3) button").css("opacity","0.2");
+    $(".slide:nth-child(4) button").css("opacity","0.2");  
+    $(".slide:nth-child(5) button").css("opacity","0.2");  
+    }
 });

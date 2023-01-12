@@ -40,7 +40,8 @@ input{
 .slide-img1,
 .slide-img3,
 .slide-img4,
-.slide-img5{
+.slide-img5,
+.slide-img6{
     opacity: 0.2;
     transform: 0.5;
 }
@@ -60,7 +61,8 @@ input{
 .slide:nth-child(1) button,
 .slide:nth-child(3) button,
 .slide:nth-child(4) button,
-.slide:nth-child(5) button{
+.slide:nth-child(5) button,
+.slide:nth-child(6) button{
     opacity: 0.5;
 }
 
@@ -113,12 +115,16 @@ input{
 #radio5:checked ~ div .first{
     margin-left: -400%;
 }
+#radio6:checked ~ div .first{
+    margin-left: -500%;
+}
 
 .slide-img1,
 .slide-img2,
 .slide-img3,
 .slide-img4,
-.slide-img5{
+.slide-img5,
+.slide-img6{
     transition: all .5s;
     box-shadow: 3px 6px 8px -1px rgba(0, 0, 0, 0.35);
 }
@@ -159,6 +165,9 @@ input{
 #radio5:checked ~ .manual label:nth-child(5){
     background: #FCB659;
 }
+#radio6:checked ~ .manual label:nth-child(6){
+    background: #FCB659;
+}
 
 /* RESPONSIVE */
 
@@ -178,9 +187,6 @@ input{
     .container_slider{
         display:block;
     }
-    
-   
-    
     .content-izq{
     left: 8px;
 }
